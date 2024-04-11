@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -14,15 +14,33 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #282c34 !important; /* Important to override any existing styles */
+  min-height: 100vh!important;
+  display: flex!important;
+  align-items: center !important; /* Center vertically */
+  justify-content: center !important; /* Center horizontally */
+  font-size: calc(10px + 2vmin)!important;
+  color: white!important;
+  text-align: center!important; /* Align text in the center */
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the background covers the entire viewport height */
+  background: linear-gradient(to bottom, #e0e0e0, #a9a9a9); /* Adjust the colors as needed */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Use a commonly available font */
+  font-size: 16px; /* Set a base font size */
+  color: #333; /* Set text color */
 }
+
+/* Additional styles for specific elements can be added below */
 
 .App-link {
   color: #61dafb;
@@ -35,4 +53,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}
