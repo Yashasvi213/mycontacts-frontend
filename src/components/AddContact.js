@@ -1,26 +1,29 @@
 //this will be an class component
 import React from "react"
+
+
 class AddContact extends React.Component{
     state = {
         name:"",
         email:""
     }
 
-    add= (e)=>{
+    add = (e) => {
         e.preventDefault();
-        if(this.state.name===""||this.state.email===""){
+        if (this.state.name === "" || this.state.email === "") {
             alert("All fields are mandatory");
             return;
         }
         this.props.AddContactHandler(this.state);
-        this.setState({name:"",email:""})
+        this.setState({ name: "", email: "" });
         console.log(this.state);
-        
+        this.props.history.push("/");
     }
-
-    // updateState=(e)=>{
-    //     this.setState(name:e.target.value)
-    // }
+    
+    //on clicking on submit form this class function will run which will carry name and email in object e
+    //will return if a field is not given
+    //run a function addCOntactHandler and pass the name and email
+    //do we require setting state then? ------->
 
     render(){
         return(

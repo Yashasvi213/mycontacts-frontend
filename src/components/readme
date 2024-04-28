@@ -1,0 +1,18 @@
+// ---------------------------Structure of our components-------------------------------
+// 1) App.js
+
+// 2) AddContact.js
+
+// 3) ContactaList
+
+// 4) ContactCard - after user add a contact it will display the rendered contact through
+
+
+
+
+// ------------------------Functionality required in our app--------------------------
+ 
+//  1) Inserting contacts in our database -> uses state and an arrow function called AddcontactHandler
+
+//  // there are 2 states first in app.js which 
+//  and then in AddContact that adds the d
